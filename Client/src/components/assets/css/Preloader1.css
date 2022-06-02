@@ -1,0 +1,49 @@
+.spinner {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: whitesmoke;
+    color: #413f3f;
+    ;
+
+}
+
+.spinner span {
+    font-size: 4rem;
+    animation: fade 1s linear 0s infinite;
+    padding-right: 1rem;
+}
+
+.half-spinner {
+    width: 4.5rem;
+    height: 4.5rem;
+    border: 5px solid #FFD460;
+    border-top: 5.5px solid transparent;
+    border-radius: 80%;
+    animation: spin 0.5s linear 0s infinite;
+
+}
+
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
